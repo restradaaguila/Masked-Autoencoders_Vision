@@ -4,11 +4,10 @@ EDITING HELP (https://stackoverflow.com/questions/11509830/how-to-add-color-to-g
 ## Background
 
 ## Research Question
-+what makes masked autoencoding different
++ what makes masked autoencoding different
 between vision and language?
 ## Approach 
-+ mask random patches of the
-input image and reconstruct the missing pixels
++ Novelty of approach is masking of images: masking random patches from the image and feeding the transformer an incomplete image. 
 + How?
   + Assymetric encoder-decoder architecture where the encoder operates on the patches without mask tokens (below we see the patches with the flamingo visible are going into the encoder)
   + 
