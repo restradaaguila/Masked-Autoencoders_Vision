@@ -9,7 +9,7 @@ Overview and discussion of Masked Autoencoders Are Scalable Vision Learners (He 
 + mask random patches of the
 input image and reconstruct the missing pixels
 + How?
-  + Assymetric encoder-decoder architecture where the encoder operates on the visible 
+  + Assymetric encoder-decoder architecture where the encoder operates on the patches of the visible image (below we see the patches with the flamingo visible are going into the encoder)
   + 
 ![image](https://user-images.githubusercontent.com/80427603/221093069-6d8bdb6e-1a77-45c3-ba35-6b4970a8bb0a.png)
 
