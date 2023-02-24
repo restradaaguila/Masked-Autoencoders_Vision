@@ -11,6 +11,7 @@ input image and reconstruct the missing pixels
 + How?
   + Assymetric encoder-decoder architecture where the encoder operates on the visible 
   + 
+![image](https://user-images.githubusercontent.com/80427603/221093069-6d8bdb6e-1a77-45c3-ba35-6b4970a8bb0a.png)
 
 ## Architecture Overview/ Pseudocode
 + (https://github.com/facebookresearch/mae/blob/main/models_mae.py)
