@@ -19,5 +19,4 @@ Overview and discussion of Masked Autoencoders Are Scalable Vision Learners (He 
 ## Critical Analysis
 
 ## Resources 
-+ This is a link to a 
-**
++ This is a link to a Chen and He's repo on Github: (https://github.com/facebookresearch/mae)
