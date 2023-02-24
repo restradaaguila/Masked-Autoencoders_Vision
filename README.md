@@ -8,6 +8,9 @@ Overview and discussion of Masked Autoencoders Are Scalable Vision Learners (He 
 ## Approach 
 + mask random patches of the
 input image and reconstruct the missing pixels
++ How?
+  + Assymetric encoder-decoder architecture where the encoder operates on the visible 
+  + 
 
 ## Architecture Overview/ Pseudocode
 + (https://github.com/facebookresearch/mae/blob/main/models_mae.py)
