@@ -7,6 +7,8 @@ Overview and discussion of Masked Autoencoders Are Scalable Vision Learners (He 
 
 ## Approach 
 
+## Architecture Overview/ Pseudocode
++ (https://github.com/facebookresearch/mae/blob/main/models_mae.py)
 ## Code Demo time!
 + The two senior authors created a repo with this demo (https://colab.research.google.com/github/facebookresearch/mae/blob/main/demo/mae_visualize.ipynb)
 
