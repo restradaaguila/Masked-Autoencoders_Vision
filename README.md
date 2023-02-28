@@ -26,5 +26,7 @@ between vision and language?
 
 ## Critical Analysis
 
+## Key Takeaways
+
 ## Resources 
 + This is a link to a Chen and He's repo on Github: (https://github.com/facebookresearch/mae)
