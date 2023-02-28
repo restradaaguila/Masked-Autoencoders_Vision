@@ -30,3 +30,5 @@ between vision and language?
 
 ## Resources 
 + This is a link to a Chen and He's repo on Github: (https://github.com/facebookresearch/mae)
+
+## Questions?
