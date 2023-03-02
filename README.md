@@ -13,12 +13,14 @@ between vision and language?
   + 
 ![image](https://user-images.githubusercontent.com/80427603/221093069-6d8bdb6e-1a77-45c3-ba35-6b4970a8bb0a.png)
 
-## Architecture Overview/ Pseudocode
+## Results
+
+## Architecture Overview
 + (https://github.com/facebookresearch/mae/blob/main/models_mae.py)
+
 ## Code Demo time!
 + The two senior authors created a repo with this demo (https://colab.research.google.com/github/facebookresearch/mae/blob/main/demo/mae_visualize.ipynb)
 
-## Results
 
 ## Discussion Questions
 + Question 1:
