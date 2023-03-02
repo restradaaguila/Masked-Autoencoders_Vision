@@ -19,8 +19,7 @@ between vision and language?
 + (https://github.com/facebookresearch/mae/blob/main/models_mae.py)
 
 ## Code Demo time!
-+ The two senior authors created a repo with this demo (https://colab.research.google.com/github/facebookresearch/mae/blob/main/demo/mae_visualize.ipynb)
-
++ The two senior authors created a repo with this demo (https://colab.research.google.com/drive/1NXe-zBSYKZTDugepN9_uFRDT8Ti708Vk#scrollTo=4573e6be-935a-4106-8c06-e467552b0e3d)
 
 ## Discussion Questions
 + Question 1:
