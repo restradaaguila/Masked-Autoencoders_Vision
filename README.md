@@ -8,7 +8,7 @@ EDITING HELP (https://stackoverflow.com/questions/11509830/how-to-add-color-to-g
    + Transformer architecture only- Applying mask tokens and positional embeds more feasible. 
 
 ## Research Question
-+ what makes masked autoencoding different
++ What makes masked autoencoding different
 between vision and language?
 ## Approach 
 + Novelty of approach is masking of images: masking random patches from the image and feeding the transformer an incomplete image. 
