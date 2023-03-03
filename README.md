@@ -8,15 +8,16 @@ EDITING HELP (https://stackoverflow.com/questions/11509830/how-to-add-color-to-g
 between vision and language?
 ## Approach 
 + Novelty of approach is masking of images: masking random patches from the image and feeding the transformer an incomplete image. 
-+ How?
++ How? 2 key parts to training to achieve self supervised learning with MAE:
   + Assymetric encoder-decoder architecture where the encoder operates on the patches without mask tokens (below we see the patches with the flamingo visible are going into the encoder)
-  + 
-![image](https://user-images.githubusercontent.com/80427603/221093069-6d8bdb6e-1a77-45c3-ba35-6b4970a8bb0a.png)
-
-## Results
+  + Masking a large portion of the image 
 
 ## Architecture Overview
 + (https://github.com/facebookresearch/mae/blob/main/models_mae.py)
++ 
+![image](https://user-images.githubusercontent.com/80427603/222825277-991b51be-050f-4fa6-a72d-2e7dbc30cde9.png)
+
+## Results
 
 ## Code Demo time!
 + The two senior authors created a repo with this demo (https://colab.research.google.com/drive/1NXe-zBSYKZTDugepN9_uFRDT8Ti708Vk#scrollTo=4573e6be-935a-4106-8c06-e467552b0e3d)
