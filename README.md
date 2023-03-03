@@ -3,7 +3,8 @@ Overview and discussion of Masked Autoencoders Are Scalable Vision Learners (He 
 EDITING HELP (https://stackoverflow.com/questions/11509830/how-to-add-color-to-githubs-readme-md-file)
 ## Background
 + Masked autoencoding: removes a portion of the data so the model can learn to predict the removed information. Masked auto encoding has been successfully applied to train generalizable NLP models. The authors, He and colleagues, argue that masked autoencoders are as applicable to computer vison. 
-+ Why has Masked autoencoding been applied to vison before? Vision architecture used to be predominantly convolutional networks which made integrating mask tokens and positional embeds more difficult. That changed with Vision Transformers (ViT). Applying mask tokens and positional embeds more feasible. 
++ Why has Masked autoencoding been applied to vison before? Vision architecture used to be predominantly convolutional neural networks (CNN), which made integrating mask tokens and positional embeds more difficult.
+  +That changed with Vision Transformers (ViT)! Transformer architecture only- Applying mask tokens and positional embeds more feasible. 
 
 ## Research Question
 + what makes masked autoencoding different
