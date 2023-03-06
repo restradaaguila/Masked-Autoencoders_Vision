@@ -56,10 +56,6 @@ Image with mask tokens, reconstructed image, original image
 ## Code Demo time!
 + The two senior authors created a repo with this demo (https://colab.research.google.com/drive/1NXe-zBSYKZTDugepN9_uFRDT8Ti708Vk#scrollTo=4573e6be-935a-4106-8c06-e467552b0e3d)
 
-## Discussion Questions
-+ Question 1:
-+ Question 2:
-
 ## Critical Analysis
 
 ## Key Takeaways
