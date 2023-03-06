@@ -45,7 +45,7 @@ Question 1: Why throwaway the decoder? Why is it no longer needed?
 ![image](https://user-images.githubusercontent.com/80427603/222825277-991b51be-050f-4fa6-a72d-2e7dbc30cde9.png)
 
 ## Results
-Image with mask tokens                Reconstructed Image                          Original Image
+Image with mask tokens, reconstructed image, original image
 ![image](https://user-images.githubusercontent.com/80427603/223009216-00b5c5a3-597b-4224-8e5f-bbb50080c8fe.png)
 ![image](https://user-images.githubusercontent.com/80427603/223009302-ad59be13-7681-4f59-8e22-be8c309f39a5.png)
 
