@@ -17,10 +17,10 @@ between vision and language?
 ## Approach 
 + Novelty of approach is masking of images: masking random patches from the image and feeding the transformer an incomplete image. 
 + How? 2 key parts to training to achieve self supervised learning with MAE:
-  + Assymetric encoder-decoder architecture where the encoder operates on the patches without mask tokens (below we see the patches with the flamingo visible are going into the encoder)
+  + Assymetric encoder-decoder architecture
   + Masking a large portion of the image is the most effective to learning
 + Pre-processing 
-   + 75% of image is masked
+   + High mask percentage is the most effective- 75% of image is masked
       + faster training (3x faster) than a whole image
       + increase in image reconstruction 
    + Masking is applied randomly- image can be input multiple times
@@ -28,10 +28,23 @@ between vision and language?
 ## Architecture Overview
 + (https://github.com/facebookresearch/mae/blob/main/models_mae.py)
 + Assymetrical encoder-decoder architecture
-+ 
++ Encoder
+   + Divides image into pateches assigned positional encodeings 
+   Encoder operates on the patches without mask tokens (below we see the patches with the flamingo visible are going into the encoder)
+   + Output is a latent vector representation 
+   Positional encodings to communicate location of each square in the input image
++ Decoder
+   + 
+   + Outputs pixel values for masked and unmasked patches.
+   + Full input image is reconstructed with predicted pixel values for masked squares. 
++ Differences between input image and reconstruction are measured and used as loss
++ After training- decoder is discarded and encoder is kept
+   
 ![image](https://user-images.githubusercontent.com/80427603/222825277-991b51be-050f-4fa6-a72d-2e7dbc30cde9.png)
 
 ## Results
+
++ Performance of MAE is compared to other self-supervised transformer models. 
 
 ## Code Demo time!
 + The two senior authors created a repo with this demo (https://colab.research.google.com/drive/1NXe-zBSYKZTDugepN9_uFRDT8Ti708Vk#scrollTo=4573e6be-935a-4106-8c06-e467552b0e3d)
