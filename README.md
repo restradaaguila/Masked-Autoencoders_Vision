@@ -20,7 +20,7 @@ between vision and language?
   + Assymetric encoder-decoder architecture
   + Masking a large portion of the image is the most effective to learning
 + Pre-processing 
-   + High mask percentage is the most effective- 75% of image is masked
+   + Masking large portion is the most effective- 75% of image is masked
       + faster training (3x faster) than a whole image
       + increase in image reconstruction 
    + Masking is applied randomly- image can be input multiple times
@@ -38,14 +38,16 @@ between vision and language?
    + Outputs pixel values for masked and unmasked patches.
    + Full input image is reconstructed with predicted pixel values for masked squares. 
 + Differences between input image and reconstruction are measured and used as loss
-+ After training- decoder is discarded and encoder is kept
++ After pre-training- decoder is discarded and encoder is kept for fine tuning
+
+Question 1: Why throwaway the decoder? Why is it no longer needed?
    
 ![image](https://user-images.githubusercontent.com/80427603/222825277-991b51be-050f-4fa6-a72d-2e7dbc30cde9.png)
 
 ## Results
 
 + Performance of MAE is compared to other self-supervised transformer models: DINO, MoCov3 and BEiT
-+ 
+![image](https://user-images.githubusercontent.com/80427603/223008783-5d9403c8-cfe4-4dd4-a897-c2388ee8ae76.png)
 
 ## Code Demo time!
 + The two senior authors created a repo with this demo (https://colab.research.google.com/drive/1NXe-zBSYKZTDugepN9_uFRDT8Ti708Vk#scrollTo=4573e6be-935a-4106-8c06-e467552b0e3d)
