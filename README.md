@@ -8,7 +8,7 @@ Applying NLP training methods to vision
    + That changed with Vision Transformers (ViT)! 
    + Transformer architecture only- Applying mask tokens and positional embeds more feasible. 
  + Self supervised learning
-   + Vision primarily trained using supervised learning -learning from human labeled images-
+   + Vision primarily trained using supervised learning -learning from human labeled images
    + 
 
 ## Research Question
