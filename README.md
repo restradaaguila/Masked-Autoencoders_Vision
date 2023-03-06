@@ -44,7 +44,8 @@ between vision and language?
 
 ## Results
 
-+ Performance of MAE is compared to other self-supervised transformer models. 
++ Performance of MAE is compared to other self-supervised transformer models: DINO, MoCov3 and BEiT
++ 
 
 ## Code Demo time!
 + The two senior authors created a repo with this demo (https://colab.research.google.com/drive/1NXe-zBSYKZTDugepN9_uFRDT8Ti708Vk#scrollTo=4573e6be-935a-4106-8c06-e467552b0e3d)
@@ -60,5 +61,6 @@ between vision and language?
 ## Resources 
 + This is a link to a Chen and He's repo on Github: (https://github.com/facebookresearch/mae)
 + ViT paper: An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (https://arxiv.org/abs/2010.11929)
++ Vison transformers compared in paper: DINO (https://arxiv.org/abs/2104.14294) MoCov3 (https://paperswithcode.com/method/moco-v3) BEiT (https://arxiv.org/abs/2106.08254)
 
 ## Questions?
