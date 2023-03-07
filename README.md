@@ -1,6 +1,5 @@
 # Masked-Autoencoders_Vision
-Overview and discussion of Masked Autoencoders Are Scalable Vision Learners (He et al. 2021) 
-EDITING HELP (https://stackoverflow.com/questions/11509830/how-to-add-color-to-githubs-readme-md-file)
+Overview of of Masked Autoencoders Are Scalable Vision Learners by Kaiming He, Xinlei Chen, Saining Xie, Yanghao Li, Piotr Dollar, Ross Girshick 
 
 ## Background
 + Autoencoders- technique that uses encoder-decoder architecture to  learn how to compress and reconstruct data. It is mainly used for unsupervised learning.  
@@ -17,6 +16,9 @@ between vision and language?
    +  Information density
       + Language is information dense and packed with meaning- masking a few word is enough of a challenge 
       + Images are heavy in spatial redundancy- masking can reduce redundancy and presents a more challenging task. 
+   + Decoder
+      + Language- predicts words
+      + Image- reconstructs pixels
      
     75% Masking
 
