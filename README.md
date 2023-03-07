@@ -34,7 +34,7 @@ Overview of of Masked Autoencoders Are Scalable Vision Learners by Kaiming He, X
 + Encoder
    + ViT 
    + Encoder operates on the patches without mask tokens (below we see the patches with the flamingo visible are going into the encoder)
-   + encodes positional embeds  
+   + Embeds patches using linear projection and encodes positional embeds  
    + Output is a latent vector representation 
 + Decoder
    + Pre-training only
@@ -42,11 +42,12 @@ Overview of of Masked Autoencoders Are Scalable Vision Learners by Kaiming He, X
    + Mask tokens signal a missing patch to be predited
    + positional embeds added to all tokens
    + Full input image is reconstructed with predicted pixel values for masked squares. 
-+ Differences between input image and reconstruction are measured and used as loss
++ Differences between input image and reconstruction are measured and used as loss (mean sq. error)
 + After pre-training decoder is discarded and encoder is kept for fine tuning
 
 Q1: what are the positional embeddings for? 
 + Guide Q: What are they for in NLP models?
+
 Q2: What is the advantage of the assymetric architecture? What about the masking ratio?
 + Guide Q: how much data is the encoder working with compared to the decoder? What is the main issue images v language?
 
@@ -60,17 +61,20 @@ Image with mask tokens, reconstructed image, original image
 
 ![image](https://user-images.githubusercontent.com/80427603/223009302-ad59be13-7681-4f59-8e22-be8c309f39a5.png)
 
-Ablation Studies key results
+ Key results
    + 75% masking is the most optimal
+   + Decoder can be lightweight and independent from encoder- large encoder for downstream tasks 
    + Encoder with mask tokens does not perform as well
-   + random sampling is optimal sampling strategy
-    ![image](https://user-images.githubusercontent.com/80427603/223462902-286da5df-c9f8-4bfe-b87f-0cb6056b6687.png)
+   + Random sampling is optimal sampling strategy
+   ![image](https://user-images.githubusercontent.com/80427603/223475154-c3d780a5-2761-492d-b3f8-cf41365f29b6.png)
+
+  ![image](https://user-images.githubusercontent.com/80427603/223462902-286da5df-c9f8-4bfe-b87f-0cb6056b6687.png)
   + Performs well with and without data augmentation- role is done by random masking
   ![image](https://user-images.githubusercontent.com/80427603/223469167-8b285c58-f969-47ec-a820-5a2b4945a321.png)
 
   + increase in image reconstruction accuracy 
   + faster training (3x faster) than a whole image
-  + ![image](https://user-images.githubusercontent.com/80427603/223297608-737e9c39-36ea-4519-87e0-845747f85ef4.png)
+ ![image](https://user-images.githubusercontent.com/80427603/223297608-737e9c39-36ea-4519-87e0-845747f85ef4.png)
    
 + Performance of MAE is compared to other self-supervised transformer models: DINO, MoCov3 and BEiT
    + MAE is the most accurate!
