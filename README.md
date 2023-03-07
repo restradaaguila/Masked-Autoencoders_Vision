@@ -19,7 +19,8 @@ Overview of of Masked Autoencoders Are Scalable Vision Learners by Kaiming He, X
       + Language- predicts words
       + Image- reconstructs pixels
 
-+ What is the best performing method for vision
++ What is the best performing method for image reconstruction?
+   
 ## Approach 
 
 +  2 key parts to achieve self supervised learning with MAE:
@@ -27,7 +28,6 @@ Overview of of Masked Autoencoders Are Scalable Vision Learners by Kaiming He, X
   + Masking a large portion of the image is the most effective to learning
 + Pre-processing 
    + Image divided into non-overlapping patches => sample a subset of patches and mask the rest. 
-   + Random sampling and high mask ratio to reduce greatly redundancy 
 
 ## Architecture Overview
 + Assymetrical encoder-decoder architecture. 
@@ -46,9 +46,9 @@ Overview of of Masked Autoencoders Are Scalable Vision Learners by Kaiming He, X
 + After pre-training decoder is discarded and encoder is kept for fine tuning
 
 Q1: what are the positional embeddings for? 
-+Guide Q: What are they for in NLP models?
-Q2: What is the advantage of the assymetric architecture? 
-+ Guide Q: how much data is the encoder working with compared to the decoder? 
++ Guide Q: What are they for in NLP models?
+Q2: What is the advantage of the assymetric architecture? What about the masking ratio?
++ Guide Q: how much data is the encoder working with compared to the decoder? What is the main issue images v language?
 
    
    ![image](https://user-images.githubusercontent.com/80427603/222825277-991b51be-050f-4fa6-a72d-2e7dbc30cde9.png)
@@ -60,11 +60,14 @@ Image with mask tokens, reconstructed image, original image
 
 ![image](https://user-images.githubusercontent.com/80427603/223009302-ad59be13-7681-4f59-8e22-be8c309f39a5.png)
 
-Ablation Studies results
+Ablation Studies key results
    + 75% masking is the most optimal
    + Encoder with mask tokens does not perform as well
-   + ![image](https://user-images.githubusercontent.com/80427603/223462902-286da5df-c9f8-4bfe-b87f-0cb6056b6687.png)
-  + Performs well with and without data augmentation- role is done by random masking 
+   + random sampling is optimal sampling strategy
+    ![image](https://user-images.githubusercontent.com/80427603/223462902-286da5df-c9f8-4bfe-b87f-0cb6056b6687.png)
+  + Performs well with and without data augmentation- role is done by random masking
+  ![image](https://user-images.githubusercontent.com/80427603/223469167-8b285c58-f969-47ec-a820-5a2b4945a321.png)
+
   + increase in image reconstruction accuracy 
   + faster training (3x faster) than a whole image
   + ![image](https://user-images.githubusercontent.com/80427603/223297608-737e9c39-36ea-4519-87e0-845747f85ef4.png)
@@ -78,10 +81,9 @@ Ablation Studies results
 
 ## Critical Analysis
 
-+ Results of the MAEViT and the comparison of their method with other ViT models are compelling evidence for their claim 
++ Results of the MAEViT, ablation studies, and comparison of their method with other ViT models are compelling evidence for their claim 
++ The ablation studies demonstrated that the factors they claim are the most optimal are the best performing. 
 + I wish the github repo and code was linked to the paper 
-
-## Key Takeaways
 
 ## Additional Resources 
 + Intro to autoencoders video (https://www.youtube.com/watch?v=qiUEgSCyY5o&ab_channel=IBMTechnology)
