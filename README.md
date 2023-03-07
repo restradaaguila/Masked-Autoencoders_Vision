@@ -95,6 +95,7 @@ Image with mask tokens, reconstructed image, original image
 + The ablation studies demonstrated that the factors they claim are the most optimal are the best performing. 
 + Comparison to other supervised and unsupervised learning models showed their method is as effective (accuracy and speed) or better 
 + I wish the github repo and code was linked to the paper 
++ More description of training needed 
 
 ## Additional Resources 
 + Intro to autoencoders video (https://www.youtube.com/watch?v=qiUEgSCyY5o&ab_channel=IBMTechnology)
