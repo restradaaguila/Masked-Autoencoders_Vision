@@ -4,7 +4,7 @@ Overview of of Masked Autoencoders Are Scalable Vision Learners by Kaiming He, X
 ## Background
 + Autoencoders- technique that uses encoder-decoder architecture to  learn how to compress and reconstruct data. It is mainly used for unsupervised learning.  
    + Computer vision: autoencoding can be used to remove noise from images, generate new images, or find hidden patterns in images.
-+  Masked autoencoders (MAE): removes a portion of the data so the model can learn to predict the removed information. Masked auto encoding has been successfully applied to train generalizable NLP models (e.g) Bert.  The authors, He and colleagues, argue that masked autoencoder models can be succesfully applied to computer vison. 
++  Masked autoencoders (MAE): removes a portion of the data so the model can learn to predict the removed information. Masked auto encoding has been successfully applied to train generalizable NLP models (e.g BERT).  The authors, He and colleagues, argue that masked autoencoder models can be succesfully applied to computer vison. 
 
 ## Research Question
 + What makes masked autoencoding different between vision and language? 
