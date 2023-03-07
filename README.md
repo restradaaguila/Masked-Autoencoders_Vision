@@ -1,19 +1,30 @@
 # Masked-Autoencoders_Vision
 Overview and discussion of Masked Autoencoders Are Scalable Vision Learners (He et al. 2021) 
 EDITING HELP (https://stackoverflow.com/questions/11509830/how-to-add-color-to-githubs-readme-md-file)
+
 ## Background
-Applying NLP training methods to vision
-+ Masked autoencoding: removes a portion of the data so the model can learn to predict the removed information. Masked auto encoding has been successfully applied to train generalizable NLP models. The authors, He and colleagues, argue that masked autoencoders are as applicable to computer vison. 
-+ Why has Masked autoencoding been applied to vison before? Vision architecture used to be predominantly convolutional neural networks (CNN), which made integrating mask tokens and positional embeds more difficult.
-   + That changed with Vision Transformers (ViT)! 
-   + Transformer architecture only- Applying mask tokens and positional embeds more feasible. 
- + Self supervised learning
-   + Vision primarily trained using supervised learning -learning from human labeled images
-   + 
++ Autoencoders- technique that uses encoder-decoder architecture to  learn how to compress and reconstruct data. It is mainly used for unsupervised learning.  
+   + Computer vision: autoencoding can be used to remove noise from images, generate new images, or find hidden patterns in images.
++  Masked autoencoding: removes a portion of the data so the model can learn to predict the removed information. Masked auto encoding has been successfully applied to train generalizable NLP models. The authors, He and colleagues, argue that masked autoencoder models can be succesfully applied to computer vison. 
 
 ## Research Question
 + What makes masked autoencoding different
-between vision and language?
+between vision and language? 
+   + Architecture
+      +  Vision architecture used to be predominantly convolutional neural networks (CNN), which made integrating mask tokens and positional embeddings more difficult.
+            + That changed with Vision Transformers (ViT)! 
+            + Transformer architecture- Applying mask tokens and positional embeds more feasible. 
+   +  Information density
+      + Language is information dense and packed with meaning- masking a few word is enough of a challenge 
+      + Images are heavy in spatial redundancy- masking high proportions of image reduces redundancy and presents a more challenging task. 
+     
+    75% Masking
+
+ ![image](https://user-images.githubusercontent.com/80427603/223315668-91c9904a-bca2-4db8-b4bf-c75a36747ffb.png)
+
+ ![image](https://user-images.githubusercontent.com/80427603/223315736-a4105bd6-137f-4544-8028-7d854ee7021e.png)
+
++ What is the best performing method for vision
 ## Approach 
 + Novelty of approach is masking of images: masking random patches from the image and feeding the transformer an incomplete image. 
 + How? 2 key parts to training to achieve self supervised learning with MAE:
@@ -22,7 +33,9 @@ between vision and language?
 + Pre-processing 
    + Masking large portion is the most effective- 75% of image is masked
       + faster training (3x faster) than a whole image
-      + increase in image reconstruction 
+      + increase in image reconstruction accuracy
+     ![image](https://user-images.githubusercontent.com/80427603/223297608-737e9c39-36ea-4519-87e0-845747f85ef4.png)
+ 
    + Masking is applied randomly- image can be input multiple times
 
 ## Architecture Overview
@@ -42,11 +55,13 @@ between vision and language?
 
 Question 1: Why throwaway the decoder? Why is it no longer needed?
    
-![image](https://user-images.githubusercontent.com/80427603/222825277-991b51be-050f-4fa6-a72d-2e7dbc30cde9.png)
+   ![image](https://user-images.githubusercontent.com/80427603/222825277-991b51be-050f-4fa6-a72d-2e7dbc30cde9.png)
 
 ## Results
 Image with mask tokens, reconstructed image, original image
+
 ![image](https://user-images.githubusercontent.com/80427603/223009216-00b5c5a3-597b-4224-8e5f-bbb50080c8fe.png)
+
 ![image](https://user-images.githubusercontent.com/80427603/223009302-ad59be13-7681-4f59-8e22-be8c309f39a5.png)
 
 + Performance of MAE is compared to other self-supervised transformer models: DINO, MoCov3 and BEiT
