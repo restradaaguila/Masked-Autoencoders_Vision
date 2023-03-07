@@ -24,7 +24,7 @@ Overview of of Masked Autoencoders Are Scalable Vision Learners by Kaiming He, X
 ## Approach 
 
 +  2 key parts to achieve self supervised learning with MAE:
-  + MAE, assymetric encoder-decoder architecture
+  + Novelty of approach is assymetric encoder-decoder architecture
   + Masking a large portion of the image is the most effective to learning
 + Pre-processing 
    + Image divided into non-overlapping patches => sample a subset of patches and mask the rest. 
@@ -62,7 +62,7 @@ Image with mask tokens, reconstructed image, original image
 ![image](https://user-images.githubusercontent.com/80427603/223009302-ad59be13-7681-4f59-8e22-be8c309f39a5.png)
 
  Key results
-   + 75% masking  
+   + 75% masking (BERT 15%)
    + Decoder can be lightweight and independent from encoder- large encoder for downstream tasks 
    + Encoder with mask tokens does not perform as well
    + Random sampling is optimal sampling strategy
