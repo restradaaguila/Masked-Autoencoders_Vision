@@ -19,7 +19,7 @@ Overview of of Masked Autoencoders Are Scalable Vision Learners by Kaiming He, X
       + Language- predicts words
       + Image- reconstructs pixels
 
-+ What is the best performing method for image reconstruction?
++ What is the best performing method for applying MAE to vision?
    
 ## Approach 
 
