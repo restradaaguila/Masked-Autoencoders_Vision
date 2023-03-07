@@ -52,7 +52,7 @@ Q2: What is the advantage of the assymetric architecture? What about the masking
 + Guide Q: how much data is the encoder working with compared to the decoder? What is the main issue images v language?
 
    
-   ![image](https://user-images.githubusercontent.com/80427603/222825277-991b51be-050f-4fa6-a72d-2e7dbc30cde9.png)
+  ![image](https://user-images.githubusercontent.com/80427603/222825277-991b51be-050f-4fa6-a72d-2e7dbc30cde9.png)
 
 ## Key Results
 Image with mask tokens, reconstructed image, original image
