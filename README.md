@@ -43,7 +43,7 @@ Overview of of Masked Autoencoders Are Scalable Vision Learners by Kaiming He, X
    + positional embeds added to all tokens
    + Full input image is reconstructed with predicted pixel values for masked squares. 
 + Differences between input image and reconstruction are measured and used as loss (mean sq. error)
-+ After pre-training decoder is discarded and encoder is kept for fine tuning
++ After pre-training decoder is discarded and encoder is kept for fine tuning, encoder is kept for downstream tasks 
 
 Q1: what are the positional embeddings for? 
 + Guide Q: What are they for in NLP models?
@@ -62,7 +62,7 @@ Image with mask tokens, reconstructed image, original image
 ![image](https://user-images.githubusercontent.com/80427603/223009302-ad59be13-7681-4f59-8e22-be8c309f39a5.png)
 
  Key results
-   + 75% masking is the most optimal
+   + 75% masking is 
    + Decoder can be lightweight and independent from encoder- large encoder for downstream tasks 
    + Encoder with mask tokens does not perform as well
    + Random sampling is optimal sampling strategy
@@ -78,22 +78,22 @@ Image with mask tokens, reconstructed image, original image
   + increase in image reconstruction accuracy 
   + faster training (3x faster) than a whole image
   
-![image](https://user-images.githubusercontent.com/80427603/223297608-737e9c39-36ea-4519-87e0-845747f85ef4.png)
-   
 + Performance of MAE is tested on downstream tasks
 
 ![image](https://user-images.githubusercontent.com/80427603/223478348-cc410082-609e-44c5-b669-92cfd2a28b14.png)
 ![image](https://user-images.githubusercontent.com/80427603/223478509-34a6ff0e-a267-4f43-ac9b-842f6d31fac9.png)
-   + compared to DINO, MoCov3 and BEiT
-   + MAE is the most accurate!
+   + Tables 5 and 4 compare MAE to DINO, MoCov3 and BEiT performance
+   + Table 6 shows scaling behavior: accuracy improves with bigger models (ViT Huge) , applied to INaturalist and Places  
+   + Table 7 shows comparison of pixel and token reconstruction. Pixel based reconstruction works fine (if normalized)
 
 ## Code Demo time!
 + The two senior authors created a repo with this demo (https://colab.research.google.com/drive/1NXe-zBSYKZTDugepN9_uFRDT8Ti708Vk#scrollTo=4573e6be-935a-4106-8c06-e467552b0e3d)
 
 ## Critical Analysis
 
-+ Results of the MAEViT, ablation studies, and comparison of their method with other ViT models are compelling evidence for their claim 
++ Results of the MAEViT, ablation studies, and comparison of their method with other ViT models are compelling evidence for their claim for scalability. 
 + The ablation studies demonstrated that the factors they claim are the most optimal are the best performing. 
++ Comparison to other supervised and unsupervised learning models showed their method is as effective or better 
 + I wish the github repo and code was linked to the paper 
 
 ## Additional Resources 
