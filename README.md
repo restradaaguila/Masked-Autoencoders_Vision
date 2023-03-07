@@ -43,7 +43,7 @@ Overview of of Masked Autoencoders Are Scalable Vision Learners by Kaiming He, X
    + positional embeds added to all tokens
    + Full input image is reconstructed with predicted pixel values for masked squares. 
 + Differences between input image and reconstruction are measured and used as loss (mean sq. error)
-+ After pre-training decoder is discarded and encoder is kept for fine tuning, encoder is kept for downstream tasks 
++ After pre-training decoder is discarded and encoder is kept for fine tuning, later used downstream tasks 
 
 Q1: what are the positional embeddings for? 
 + Guide Q: What are they for in NLP models?
@@ -62,7 +62,7 @@ Image with mask tokens, reconstructed image, original image
 ![image](https://user-images.githubusercontent.com/80427603/223009302-ad59be13-7681-4f59-8e22-be8c309f39a5.png)
 
  Key results
-   + 75% masking is 
+   + 75% masking  
    + Decoder can be lightweight and independent from encoder- large encoder for downstream tasks 
    + Encoder with mask tokens does not perform as well
    + Random sampling is optimal sampling strategy
@@ -93,7 +93,7 @@ Image with mask tokens, reconstructed image, original image
 
 + Results of the MAEViT, ablation studies, and comparison of their method with other ViT models are compelling evidence for their claim for scalability. 
 + The ablation studies demonstrated that the factors they claim are the most optimal are the best performing. 
-+ Comparison to other supervised and unsupervised learning models showed their method is as effective or better 
++ Comparison to other supervised and unsupervised learning models showed their method is as effective (accuracy and speed) or better 
 + I wish the github repo and code was linked to the paper 
 
 ## Additional Resources 
