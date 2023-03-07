@@ -66,19 +66,26 @@ Image with mask tokens, reconstructed image, original image
    + Decoder can be lightweight and independent from encoder- large encoder for downstream tasks 
    + Encoder with mask tokens does not perform as well
    + Random sampling is optimal sampling strategy
-   ![image](https://user-images.githubusercontent.com/80427603/223475154-c3d780a5-2761-492d-b3f8-cf41365f29b6.png)
+   
+![image](https://user-images.githubusercontent.com/80427603/223475154-c3d780a5-2761-492d-b3f8-cf41365f29b6.png)
 
-  ![image](https://user-images.githubusercontent.com/80427603/223462902-286da5df-c9f8-4bfe-b87f-0cb6056b6687.png)
+![image](https://user-images.githubusercontent.com/80427603/223462902-286da5df-c9f8-4bfe-b87f-0cb6056b6687.png)
+
   + Performs well with and without data augmentation- role is done by random masking
-  ![image](https://user-images.githubusercontent.com/80427603/223469167-8b285c58-f969-47ec-a820-5a2b4945a321.png)
+  
+![image](https://user-images.githubusercontent.com/80427603/223469167-8b285c58-f969-47ec-a820-5a2b4945a321.png)
 
   + increase in image reconstruction accuracy 
   + faster training (3x faster) than a whole image
- ![image](https://user-images.githubusercontent.com/80427603/223297608-737e9c39-36ea-4519-87e0-845747f85ef4.png)
+  
+![image](https://user-images.githubusercontent.com/80427603/223297608-737e9c39-36ea-4519-87e0-845747f85ef4.png)
    
-+ Performance of MAE is compared to other self-supervised transformer models: DINO, MoCov3 and BEiT
++ Performance of MAE is tested on downstream tasks
+
+![image](https://user-images.githubusercontent.com/80427603/223478348-cc410082-609e-44c5-b669-92cfd2a28b14.png)
+![image](https://user-images.githubusercontent.com/80427603/223478509-34a6ff0e-a267-4f43-ac9b-842f6d31fac9.png)
+   + compared to DINO, MoCov3 and BEiT
    + MAE is the most accurate!
-![image](https://user-images.githubusercontent.com/80427603/223008783-5d9403c8-cfe4-4dd4-a897-c2388ee8ae76.png)
 
 ## Code Demo time!
 + The two senior authors created a repo with this demo (https://colab.research.google.com/drive/1NXe-zBSYKZTDugepN9_uFRDT8Ti708Vk#scrollTo=4573e6be-935a-4106-8c06-e467552b0e3d)
