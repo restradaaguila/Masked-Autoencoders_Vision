@@ -16,7 +16,7 @@ between vision and language?
             + Transformer architecture- Applying mask tokens and positional embeds more feasible. 
    +  Information density
       + Language is information dense and packed with meaning- masking a few word is enough of a challenge 
-      + Images are heavy in spatial redundancy- masking high proportions of image reduces redundancy and presents a more challenging task. 
+      + Images are heavy in spatial redundancy- masking can reduce redundancy and presents a more challenging task. 
      
     75% Masking
 
@@ -26,7 +26,7 @@ between vision and language?
 
 + What is the best performing method for vision
 ## Approach 
-+ Novelty of approach is masking of images: masking random patches from the image and feeding the transformer an incomplete image. 
++ Novelty of approach is masking of images: masking a high proportion of random patches from the original and feeding the transformer an incomplete image. 
 + How? 2 key parts to training to achieve self supervised learning with MAE:
   + Assymetric encoder-decoder architecture
   + Masking a large portion of the image is the most effective to learning
@@ -34,6 +34,7 @@ between vision and language?
    + Masking large portion is the most effective- 75% of image is masked
       + faster training (3x faster) than a whole image
       + increase in image reconstruction accuracy
+      +  Masking is applied randomly- same image can be input multiple times
      ![image](https://user-images.githubusercontent.com/80427603/223297608-737e9c39-36ea-4519-87e0-845747f85ef4.png)
  
    + Masking is applied randomly- image can be input multiple times
@@ -73,11 +74,16 @@ Image with mask tokens, reconstructed image, original image
 
 ## Critical Analysis
 
++ Results of the MAEViT and the comparison of their method with other ViT models are compelling evidence for their claim 
++ I wish the github repo and code was linked to the paper 
+
 ## Key Takeaways
 
-## Resources 
+## Additional Resources 
++ Intro to autoencoders video (https://www.youtube.com/watch?v=qiUEgSCyY5o&ab_channel=IBMTechnology)
 + This is a link to a Chen and He's repo on Github: (https://github.com/facebookresearch/mae)
 + ViT paper: An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (https://arxiv.org/abs/2010.11929)
 + Vison transformers compared in paper: DINO (https://arxiv.org/abs/2104.14294) MoCov3 (https://paperswithcode.com/method/moco-v3) BEiT (https://arxiv.org/abs/2106.08254)
++ Proposed modification of MAE paper with github link: (https://openreview.net/pdf?id=qm5LpHyyOUO)
 
 ## Questions?
